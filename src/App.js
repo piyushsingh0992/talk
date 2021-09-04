@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          piyush
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+       
+      </div>
+    </>
   );
 }
 
 export default App;
+
+
+
+
+// function App() {
+//   const [counter, counterSetter] = useState(0);
+//   return (
+//     <>
+//       <div className="App">
+//         <h1 className="counter">{counter}</h1>
+//         <button
+//           onClick={() => {
+//             counterSetter((value) => value + 1);
+//           }}
+//           className="btn btn-primary increment"
+//         >
+//           Increase
+//         </button>
+//         <button
+//           onClick={() => {
+//             counterSetter((value) => value - 1);
+//           }}
+//           className="btn btn-secondary decrement"
+//         >
+//           Decrease
+//         </button>
+//       </div>
+//     </>
+//   );
+// }
